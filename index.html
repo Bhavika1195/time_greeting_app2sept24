@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> Time Greeting App</title>
+		<style>
+			*{font-size:60px;}
+			h1{background-color:black;color:white; width:50%; border-radius:50px;font-size:100px;font-family:ink Free; color:white;}
+			body{background-color:lightblue;}
+		</style>
+	</head>
+	<body>
+		<center>
+			<br/>
+			<h1>Good Evening<h1/>
+			<h2 id="msg"/>
+		
+		<script>
+			let msg=document.getElementById("msg");
+			let d=newDate();
+			let hr=d.getHours();
+
+			if(hr<12)
+				msg.InnerHTML="Good Morning";
+
+			if(hr<16)
+				msg.InnerHTML="Good	Afternoon";
+
+			else
+				msg.InnerHTML="Good Evening";
+		</script>
+		</center>
+	</body>
+</html>
